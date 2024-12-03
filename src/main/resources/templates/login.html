@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(120deg, #3498db, #8e44ad);
+            color: #fff;
+        }
+        .login-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            width: 350px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            color: #333;
+        }
+        .login-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #3498db;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .login-button {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+            transition: background 0.3s;
+        }
+        .login-button:hover {
+            background-color: #2980b9;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .footer a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<div class="login-container">
+    <h2>Đăng nhập</h2>
+    <form method="post" action="/login">
+        <div class="form-group">
+            <label for="username">Tài khoản</label>
+            <input type="text" id="username" name="username" placeholder="Nhập tài khoản" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Mật khẩu</label>
+            <input type="password" id="password" name="password" placeholder="Nhập mật khẩu" required>
+        </div>
+        <button type="submit" class="login-button">Đăng nhập</button>
+    </form>
+</div>
+</body>
+</html>
